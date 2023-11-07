@@ -1,3 +1,5 @@
+import Navbar from "../molekul/Navbar";
+
 const Overlaymenu = () => {
   return (
     <div className='overlay-container'>
@@ -6,16 +8,14 @@ const Overlaymenu = () => {
        
         </div>
         <div className='overlay-top-right'>
-          <a href="">Made By OnyanPokon</a>
+          <a href="https://github.com/OnyanPokon" className="github">/ BY OnyanKonpon</a>
         </div>
       </div>
       <div className='overlay-bottom'>
         <div className='overlay-bottom-left'>
 
         </div>
-        <div className='navbar'>
-
-        </div>
+        <Navbar />
         <div className='overlay-bottom-right'>
 
         </div>
