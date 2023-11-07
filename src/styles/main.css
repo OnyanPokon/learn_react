@@ -1,0 +1,7 @@
+@import url('Overlaymenu.css');
+@import url('Navbar.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}

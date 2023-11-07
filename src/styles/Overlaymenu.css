@@ -1,0 +1,51 @@
+.overlay-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 2rem;
+
+    z-index: 2;
+    position: fixed;
+}
+
+.overlay-container .overlay-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.overlay-top-left{
+    padding: 1rem;
+    background-color: transparent;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+.overlay-top-right{
+    padding: 1rem;
+    background-color: transparent;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.overlay-container .overlay-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.overlay-bottom-left{
+    padding: 1rem;
+    background-color: transparent;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.overlay-bottom-right{
+    padding: 1rem;
+    background-color: transparent;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
