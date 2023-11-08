@@ -1,9 +1,7 @@
-import Overlaymenu from "../components/Overlaymenu";
-
 const Homepage = () => {
   return (
     <>
-      <Overlaymenu />
+      <h1>home</h1>
     </>
   )
 }

@@ -21,14 +21,14 @@
 .overlay-top-left{
     padding: 1rem;
     background-color: transparent;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
+    border-left: 1px solid var(--black);
+    border-top: 1px solid var(--black);
 }
 .overlay-top-right{
     padding: 1rem;
     background-color: transparent;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+    border-right: 1px solid var(--black);
+    border-top: 1px solid var(--black);
 }
 
 .overlay-container .overlay-bottom{
@@ -40,22 +40,36 @@
 .overlay-bottom-left{
     padding: 1rem;
     background-color: transparent;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
 }
 .overlay-bottom-right{
     padding: 1rem;
     background-color: transparent;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
 }
 
 .github{
     font-size: small;
-    color: black;
+    color: var(--black);
     text-transform: uppercase;
     text-decoration: none;
+    min-width: 44px;
+    min-height: 44px;
+
+    display: none;
 }
 .github:hover{
-    color: blue;
+    color: var(--violetblue);
+}
+.nav-wrapper{
+    padding: 1rem;
+}
+
+@media (min-width: 768px){
+    .github{
+        display: flex;
+        align-items: center;
+    }
 }
