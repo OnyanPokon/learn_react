@@ -1,0 +1,27 @@
+.profile-placeholder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999rem;
+  width: 48px;
+  height: 48px;
+}
+
+.profile-placeholder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .profile-placeholder{
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .profile-placeholder{
+    width: 64px;
+    height: 64px;
+  }
+}

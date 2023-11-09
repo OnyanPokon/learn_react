@@ -11,8 +11,11 @@ nav{
   border: 1px solid white;
 
   display: none;
+
+  pointer-events: all;
 }
 .navlink{
+    font-family: 'Poppins', sans-serif;
     color: white;
     text-decoration: none;
     min-width: 44px;
@@ -20,6 +23,7 @@ nav{
     padding: .8rem;
     border-radius: .3rem;
 }
+
 
 @media (min-width: 768px){
   nav{

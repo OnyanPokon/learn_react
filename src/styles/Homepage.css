@@ -1,0 +1,433 @@
+/* section =========================*/
+section{
+  width: 100%;
+  max-width: 1024px;
+  margin-inline: auto;
+
+}
+.hero-section {
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;
+}
+
+.quote-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;
+}
+
+
+.skills-section{
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+  position: relative;
+}
+/* section end ============================*/
+
+
+
+
+
+
+
+
+/* component */
+
+/* overlay menu ==============================*/
+.overlay-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 2rem;
+
+  z-index: 2;
+  position: fixed;
+
+  pointer-events: none;
+}
+
+.overlay-container .overlay-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.overlay-top-left{
+  padding: 1rem;
+  background-color: transparent;
+  border-left: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+}
+.overlay-top-right{
+  padding: 1rem;
+  background-color: transparent;
+  border-right: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+}
+
+.overlay-container .overlay-bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.overlay-bottom-left{
+  padding: 1rem;
+  background-color: transparent;
+  border-left: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+.overlay-bottom-right{
+  padding: 1rem;
+  background-color: transparent;
+  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+.github{
+  font-size: small;
+  color: var(--black);
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 44px;
+  min-height: 44px;
+
+  display: none;
+
+  pointer-events: all;
+}
+.github:hover{
+  color: var(--violetblue);
+}
+.nav-wrapper{
+  padding: 1rem;
+}
+/* end overlay menu ======================*/
+
+
+
+
+
+
+/* wellcome  ============================*/
+.welcome-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* end wellcome  =========================*/
+
+
+
+
+
+
+
+/* Quote =================================*/
+.quote-wrapper{
+  display: flex;
+  padding-inline: 2rem;
+  gap: 2rem;
+}
+.arrow-placeholder svg{
+  width: 25px;
+  height: 25px;
+}
+
+.quote-placeholder{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; 
+}
+
+.quote-placeholder p.quote{
+  font-size: x-small;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+}
+.quote-placeholder p.someone-famous {
+  font-size: xx-small;
+}
+.quote-placeholder p.someone-famous span{
+  font-weight: bold;
+}
+
+/* end Quote ================================*/
+
+
+
+
+
+
+
+
+/* hero =====================================*/
+.hero-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.hero-wrapper h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+
+  color: var(--black);
+}
+.hero-wrapper h1 span{
+  font-size: 2rem;
+  letter-spacing: normal;
+  font-family: 'Poppins' ,sans-serif;
+  font-weight: bold;
+}
+.badge-wrapper{
+  display: flex;
+  width: 100%;
+  font-size: xx-small;
+  justify-content: space-around;
+}
+/* hero end ===============================*/
+
+
+
+
+
+
+
+/* skills ==================================*/
+.skills-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  padding-inline: 4rem;
+}
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-id p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.skill-headline p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+}
+.skill-headline p span{
+  font-family: 'Poppins', sans-serif;
+  color: var(--violetblue);
+}
+
+.skill-name p{
+  font-size: x-small;
+}
+.skill-desc p{
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-small;
+}
+
+/* end skills ==============================*/
+
+
+
+
+
+
+/* svg =====================================*/
+.plus-container{
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+
+  padding-inline: 1rem;
+
+  position: absolute;
+  top: 20rem;
+}
+
+.cube1{
+  position: absolute;
+  width: 10rem;
+}
+.ruby{
+  position: absolute;
+  width: 5rem;
+  bottom: 1rem;
+
+  z-index: 2;
+}
+.donut{
+  position: absolute;
+  width: 15rem;
+  right: 1px;
+}
+.skills-section svg{
+  width: 2rem;
+}
+/* svg end ===============================*/
+
+
+
+
+
+
+
+
+
+
+
+/* responsive ==============================*/
+@media (min-width: 640px) {
+  /* section responsive ================*/
+  .quote-section{
+    padding-block: 4rem;
+  }
+  .plus-container{
+    display: flex;
+  }
+  .cube1{
+    width: 20rem;
+    left: -5rem;
+  }
+  /* end section responsive =============*/
+
+
+
+
+  /* quote responsive ====================*/
+  .quote-wrapper{
+    padding-inline: 2rem;
+  }
+  .quote-placeholder p.quote{
+    font-size: large;
+  }
+  .quote-placeholder p.someone-famous {
+    font-size: xx-small;
+  }
+  /* end quote responsive ================*/
+
+
+
+
+  /* hero responsive ===================== */
+  .hero-wrapper h1 {
+    font-size: 6rem;
+  }
+  .hero-wrapper h1 span{
+    font-size: 4rem;
+  }
+  .badge-wrapper{
+    text-transform: uppercase;
+    font-size: small;
+    justify-content: space-around;
+  }
+  /* end hero responsive ================= */
+
+
+
+  /* skill responsive =====================*/
+  .skills-wrapper{
+    flex-direction: row;
+    padding-inline: 5rem;
+    gap: 12rem;
+  }
+  .skill-id p{
+    font-size: 6rem;
+  }
+  .skill-headline p{
+    font-size: x-large;
+  }
+
+  .skill-name p {
+    font-size: small;
+  }
+
+  .skill-desc p{
+    font-size: small;
+  }
+  /* end skill responsive =====================*/
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  /* section responsive ===================*/
+  .quote-section{
+    padding-block: 5rem;
+  }
+  /* end section responsive ==============*/
+
+
+
+
+  /* welcome responsive ================== */
+  .github{
+    display: flex;
+    align-items: center;
+  }
+  /* end welcome responsive ===============*/
+
+
+
+
+  /* quote responsive =====================*/
+  .quote-wrapper{
+    padding-inline: 2rem;
+  }
+  .quote-placeholder p.quote{
+    font-size: larger;
+  }
+  .quote-placeholder p.someone-famous {
+    font-size: small;
+  }
+  .arrow-placeholder svg{
+    width: 50px;
+    height: 50px;
+  }
+  /* end quote responsive ==================*/
+
+
+
+
+  /* hero responsive ====================== */
+  .hero-wrapper h1 {
+    font-size: 11rem;
+    letter-spacing: -0.3rem;
+  }
+  .hero-wrapper h1 span{
+    font-size: 6rem;
+  }
+  .badge-wrapper{
+    justify-content: space-around;
+  }
+  /* end hero responsive =================== */
+}

@@ -1,0 +1,20 @@
+.welcome-message h3{
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: x-small;
+  color: var(--black);
+}
+.welcome-message h3 span{
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .welcome-message h3{
+    font-size: small;
+  }
+}
+@media (min-width: 768px) {
+  .welcome-message h3{
+    font-size: smaller;
+  }
+}

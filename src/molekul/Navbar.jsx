@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { navItems } from "../data/data";
 
+
 function Navbar() {
   return (
     <nav>

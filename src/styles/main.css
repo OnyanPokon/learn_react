@@ -1,6 +1,13 @@
-@import url('Overlaymenu.css');
-@import url('Navbar.css');
+/* pages */
+@import url('Homepage.css');
+/* molekul */
+@import url('molekul/Navbar.css');
+@import url('molekul/Homepage-profile.css');
+@import url('molekul/welcome-message.css');
+/* atom */
+@import url('atom/profile-placeholder.css');
 
+/* global */
 :root{
     --violetblue: #5739fb;
     --black: #1f1f1f;
@@ -10,8 +17,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif  ;
+    font-family: 'Inconsolata', monospace;
 }
 body{
-    /* background-color: black; */
+    background-color: var(--gainsboro);
+    height: 400vh;
 }
